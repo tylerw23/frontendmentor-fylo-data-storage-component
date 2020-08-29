@@ -1,0 +1,43 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.container {
+    /* margin: 0 auto; */
+    /* width: 1440px; */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: hsl(243, 100%, 93%); */
+    /* background-image: linear-gradient(to right, hsl(243, 100%, 93%),hsl(229, 7%, 55%),hsl(228, 56%, 26%),hsl(229, 57%, 11%)); */
+    background-color: hsl(229, 57%, 11%);
+    background-image: url('/images/bg-desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0% 100%, 0% 0%;
+    
+}
+
+.container > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 15px;
+    /* margin: 0 auto; */
+    /* text-align: center; */
+    /* line-height: 75px; */
+}
+
+.logo {
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
