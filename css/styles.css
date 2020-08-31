@@ -1,38 +1,38 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
 }
 
 .container {
-    /* margin: 0 auto; */
-    /* width: 1440px; */
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: hsl(229, 57%, 11%);
-    background-image: url('/images/bg-desktop.png');
-    background-size: contain;
+    background-image: url("/images/bg-desktop.png");
+    background-size: 100% 50%;
     background-repeat: no-repeat;
-    background-position: 0% 100%, 0% 0%;
-    
+    background-position: bottom;
+}
+.center-block {
+    display: flex;
+    align-items: flex-end;
 }
 
-.container > div {
+.center-block > div {
     background-color: hsl(228, 56%, 26%);
-    margin: 10px;
+    margin: 20px;
     padding: 25px;
-    /* margin: 0 auto; */
-    /* text-align: center; */
-    /* line-height: 75px; */
 }
 
 .left {
-    border-radius: 10px 100px 10px 10px;
+    border-radius: 10px 90px 10px 10px;
 }
 
 .logo {
-    margin: 10px 120px 10px 10px;
+    /* background:  hsl(243, 100%, 93%); */
+    margin: 10px 150px 10px 10px;
 }
 
 .buttons {
@@ -52,7 +52,79 @@ html, body {
     font-family: Raleway;
 }
 
+.text {
+    color: hsl(229, 7%, 55%);
+}
 
+.data-block {
+    float: right;
+    position: absolute;
+    transform: translate(85px, -80px);
+}
+
+.data-block-text {
+    padding: 10px 15px;
+    border-radius: 15px 15px 0px 15px;
+    background-color: aliceblue;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.data-block-triangle {
+    width: 0;
+    float: right;
+    border-top: 20px solid aliceblue;
+    border-left: 20px solid transparent;
+}
+
+.data-block-text-data {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.data {
+    color: hsl(243, 100%, 93%);
+}
+
+progress[value] {
+    height: 14px;
+    width: 450px;
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0px 5px 0px 2px;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+}
+
+progress[value]::-webkit-progress-value {
+    background-image: linear-gradient(
+        to right,
+        hsl(6, 100%, 80%),
+        hsl(335, 100%, 65%)
+    );
+    border-radius: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    position: relative;
+    left: 78%;
+    bottom: 13px;
+    background-color: white;
+}
+
+.data-start {
+    float: left;
+}
+
+.data-end {
+    float: right;
+}
 
 .attribution {
     font-size: 11px;
@@ -60,5 +132,5 @@ html, body {
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
 }
