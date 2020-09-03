@@ -18,21 +18,22 @@ body {
 .center-block {
     display: flex;
     align-items: flex-end;
+    width: 900px;
 }
 
 .center-block > div {
     background-color: hsl(228, 56%, 26%);
-    margin: 20px;
-    padding: 25px;
+    margin: 40px 10px;
+    padding: 20px;
 }
 
 .left {
     border-radius: 10px 90px 10px 10px;
+    width: 400px;
 }
 
 .logo {
-    /* background:  hsl(243, 100%, 93%); */
-    margin: 10px 150px 10px 10px;
+    margin: 10px 10px 10px 10px;
 }
 
 .buttons {
@@ -48,6 +49,7 @@ body {
 
 .right {
     border-radius: 10px;
+    width: 380px;
     font-size: 14px;
     font-family: Raleway;
 }
@@ -59,7 +61,7 @@ body {
 .data-block {
     float: right;
     position: absolute;
-    transform: translate(85px, -80px);
+    transform: translate(15px, -80px);
 }
 
 .data-block-text {
@@ -88,10 +90,10 @@ body {
 
 progress[value] {
     height: 14px;
-    width: 450px;
+    width: 100%;
     -webkit-appearance: none;
     appearance: none;
-    margin: 0px 5px 0px 2px;
+    margin: 10px 5px 0px 2px;
 }
 
 progress[value]::-webkit-progress-bar {
@@ -128,9 +130,39 @@ progress[value]::-webkit-progress-value {
 
 .attribution {
     font-size: 11px;
-    text-align: center;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    color: aliceblue;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
+
+@media only screen and (max-width:950px) {
+    .center-block {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .left, .right {
+        width: 80%;
+    }
+
+    .data-block, .data-block-triangle {
+        all: unset;
+    }
+
+    .data-block-text {
+        width: 40%;
+        text-align: center;
+        border-radius: 15px 15px 15px 15px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 80%);
+    }
+  }
